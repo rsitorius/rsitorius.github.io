@@ -70,48 +70,43 @@ experiences:
         time: 06.2015 - Present
         company: FreightCar America | Chicago, IL
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
+          - <add>
       - role: Programmer Analyst Supervisor
         time: 01.2019 - 06.2021
         company: FreightCar America | Chicago, IL
         details: |
-          - Led a cross functional team of 14 developers and consultants 
+          - Led cross functional teams of developers and consultants 
             across multiple projects, ensuring efficient resource allocation, 
             on-time delivery, and successful project outcomes.
-          - Successfully spearheaded the multi-million dollar Oracle MX 
-            Organization implementation project as Project Manager. Led a 
-            cross functional team of over 40 members, facilitating key 
-            developments in currency exchange and regulatory reporting, 
-            enabling FreightCar's expansion into Mexico.
-          - Managed the implementation of Kronos Workforce Ready as Project 
-            Manager, a critical HCM solution for Mexico. Led a team of 12 to 
-            streamline employee labor tracking enhancing operational 
-            efficiency and cost control.
+          - Successfully managed several key projects related to expansion 
+            into Mexico (including ERP and HCM systems) to meet all regulatory
+            and operational requirements.
           - Demonstrated strong technical expertise by administering a wide 
             range of enterprise (including ERP, EPM, CRM, HCM, and BI) systems.
-
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
+      - role: Programmer Analyst
+        time: 02.2016 - 01.2019
+        company: FreightCar America | Chicago, IL
         details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-
+          - Successfully lead Kronos Schedulder project which drove employee 
+            employee utilization and operational efficiency by allowing management
+            to analyze labor based on budget, planned, and actual hours.
+          - Primary technician for key operational Oracle EBS projects related to 
+            the operational expansion and efficiency. The projects enhanced the 
+            capacity and reduced the operational costs.
+      - role: Technical Support Specialist
+        time: 10.2013 - 02.2016
+        company: FreightCar America | Chicago, IL
+        details: |
+          - Managed a phased implmentation of Kronos across multiple locations which 
+            successfully implemented, Timekeeper, Accruals, and Attendance modules
+            streamlining time tracking and automating the attendance process which
+            reduced manual tracking and increased efficiency.
+      - role: Independent Contractor
+        time: 04.2013 - 10.2013
+        company: FreightCar America | Chicago, IL
+      - role: Computer System Administrator
+        time: 10.2006 - 04.2013
+        company: Dixie Heat Treating | Florence, AL
 education:
     title: Education
     info:
