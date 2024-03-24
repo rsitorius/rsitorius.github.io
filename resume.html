@@ -6,10 +6,14 @@ permalink: /resume/
 
 
 <style>
-  /* Custom CSS for underlined section names */
-  .section-name {
-    font-weight: bold;
-    text-decoration: underline;
+  /* Custom CSS for section headers */
+  .section-header {
+    margin-top: 10px; /* Adjust margin-top as needed */
+  }
+  .section-header hr {
+    border: none;
+    border-top: 2px solid black; /* Adjust border properties as needed */
+    margin-top: 5px; /* Adjust margin-top as needed */
   }
 
   /* Custom CSS for job title, company, and duration */
@@ -39,7 +43,10 @@ permalink: /resume/
   {% assign resume_sections = site.data.resume.resume_sections %}
   {% for section in resume_sections %}
     <section class="mb-4">
-      <h3 class="section-name mb-3">{{ section.name }}</h3>
+      <div class="section-header">
+        <h3 class="mb-3">{{ section.name }}</h3>
+        <hr>
+      </div>
       {% if section.items %}
         <ul class="list-unstyled" style="font-size: 16px;">
           {% for item in section.items %}
