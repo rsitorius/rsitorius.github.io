@@ -14,11 +14,22 @@ permalink: /resume/
 
   /* Custom CSS for job title, company, and duration */
   .job-title-company {
-    display: block;
+    display: inline-block;
     font-weight: bold;
   }
   .duration {
     font-style: italic;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .education-info {
+    display: inline-block;
+    font-weight: bold;
+  }
+  .education-info::after {
+    content: " |";
+    margin-left: 5px;
+    margin-right: 5px;
   }
 </style>
 
@@ -34,9 +45,10 @@ permalink: /resume/
           {% for item in section.items %}
             {% if section.name == 'Education' %}
               <li class="mb-3">
-                <h4 class="mb-1 font-weight-bold">{{ item.degree }}</h4>
-                <p class="mb-1">{{ item.university }}</p>
-                <p class="text-muted mb-0">{{ item.graduation_year }}</p>
+                <div class="education-info">{{ item.degree }}</div>
+                <div class="education-info">{{ item.university }}</div>
+                <div class="education-info">{{ item.location }}</div>
+                <div class="education-info">{{ item.graduation_year }}</div>
               </li>
             {% elsif section.name == 'Experience' %}
               <li class="mb-3">
