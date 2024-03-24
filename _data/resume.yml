@@ -3,22 +3,33 @@
 resume_sections:
   - name: Summary
     description: Enter your summary or objective here.
-  - name: Education
-    items:
-      - degree: Degree Name
-        university: University Name, Location
-        graduation_year: Year of Graduation
-      # Add more education entries as needed
   - name: Experience
     items:
       - title: Job Title
         company: Company Name
+        location: location
         duration: Start Date - End Date
         description: Description of responsibilities and achievements.
       # Add more experience entries as needed
+  - name: Education
+    items:
+      - degree: Degree Name
+        university: University Name
+        location: 
+        graduation_year: Year of Graduation
+        description: description of class
+      # Add more education entries as needed
   - name: Skills
     items:
-      - name: Skill 1
-      - name: Skill 2
-      - name: Skill 3
+      categories:
+      - name: Programming Languages
+        items:
+          - name: Python
+          - name: JavaScript
+          - name: Java
+      - name: Web Technologies
+        items:
+          - name: HTML5
+          - name: CSS3
+          - name: JavaScript Frameworks (React, Vue.js, Angular)
       # Add more skills as needed
