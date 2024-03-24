@@ -13,13 +13,12 @@ permalink: /resume/
   }
 
   /* Custom CSS for job title, company, and duration */
-  .job-title-company-duration {
-    display: inline-block;
+  .job-title-company {
+    display: block;
+    font-weight: bold;
   }
-  .job-title-company-duration::after {
-    content: " |";
-    margin-left: 5px;
-    margin-right: 5px;
+  .duration {
+    font-style: italic;
   }
 </style>
 
@@ -41,10 +40,9 @@ permalink: /resume/
               </li>
             {% elsif section.name == 'Experience' %}
               <li class="mb-3">
-                <div class="job-title-company-duration">
-                  <h4 class="mb-1 font-weight-bold">{{ item.title }}</h4>
-                  <p class="mb-1">{{ item.company }} | {{ item.duration }}</p>
-                </div>
+                <div class="job-title-company">{{ item.title }}</div>
+                <div class="job-title-company">{{ item.company }}</div>
+                <p class="duration">{{ item.duration }}</p>
                 <p class="mb-0">{{ item.description }}</p>
               </li>
             {% elsif section.name == 'Skills' %}
