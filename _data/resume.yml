@@ -1,3 +1,5 @@
+# _data/resume.yml
+
 resume_sections:
   - name: Summary
     description: Enter your summary or objective here.
@@ -10,7 +12,7 @@ resume_sections:
   - name: Experience
     items:
       - title: Job Title
-        company: Company Name, Location
+        company: Company Name
         duration: Start Date - End Date
         description: Description of responsibilities and achievements.
       # Add more experience entries as needed
@@ -20,5 +22,3 @@ resume_sections:
       - name: Skill 2
       - name: Skill 3
       # Add more skills as needed
-  - name: References
-    description: Available upon request.
