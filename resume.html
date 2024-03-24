@@ -16,22 +16,18 @@ permalink: /resume/
     margin-top: 5px; /* Adjust margin-top as needed */
   }
 
-  /* Custom CSS for job title, company, and duration */
-  .job-title-company {
+  /* Custom CSS for job title, company, and education */
+  .info {
     display: inline-block;
     font-weight: bold;
   }
-  .duration {
-    font-style: italic;
+  .info::after {
+    content: " |";
     margin-left: 5px;
     margin-right: 5px;
   }
-  .education-info {
-    display: inline-block;
-    font-weight: bold;
-  }
-  .education-info::after {
-    content: " |";
+  .duration {
+    font-style: italic;
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -52,16 +48,16 @@ permalink: /resume/
           {% for item in section.items %}
             {% if section.name == 'Education' %}
               <li class="mb-3">
-                <div class="education-info">{{ item.degree }}</div>
-                <div class="education-info">{{ item.university }}</div>
-                <div class="education-info">{{ item.location }}</div>
-                <div class="education-info">{{ item.graduation_year }}</div>
+                <div class="info">{{ item.degree }}</div>
+                <div class="info">{{ item.university }}</div>
+                <div class="info">{{ item.location }}</div>
+                <div class="info duration">{{ item.graduation_year }}</div>
               </li>
             {% elsif section.name == 'Experience' %}
               <li class="mb-3">
-                <div class="job-title-company">{{ item.title }}</div>
-                <div class="job-title-company">{{ item.company }}</div>
-                <p class="duration">{{ item.duration }}</p>
+                <div class="info">{{ item.title }}</div>
+                <div class="info">{{ item.company }}</div>
+                <div class="info duration">{{ item.duration }}</div>
                 <p class="mb-0">{{ item.description }}</p>
               </li>
             {% elsif section.name == 'Skills' %}
