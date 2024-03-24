@@ -1,0 +1,24 @@
+resume_sections:
+  - name: Summary
+    description: Enter your summary or objective here.
+  - name: Education
+    items:
+      - degree: Degree Name
+        university: University Name, Location
+        graduation_year: Year of Graduation
+      # Add more education entries as needed
+  - name: Experience
+    items:
+      - title: Job Title
+        company: Company Name, Location
+        duration: Start Date - End Date
+        description: Description of responsibilities and achievements.
+      # Add more experience entries as needed
+  - name: Skills
+    items:
+      - name: Skill 1
+      - name: Skill 2
+      - name: Skill 3
+      # Add more skills as needed
+  - name: References
+    description: Available upon request.

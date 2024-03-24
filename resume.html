@@ -7,53 +7,36 @@ permalink: /resume/
 <div class="container mt-4">
   <h2 class="mb-4">Resume</h2>
   
-  <!-- Summary Section -->
-  <section class="mb-4">
-    <h3 class="font-weight-bold mb-3">Summary</h3>
-    <p class="mb-0">Enter your summary or objective here.</p>
-  </section>
-
-  <!-- Education Section -->
-  <section class="mb-4">
-    <h3 class="font-weight-bold text-uppercase mb-3">Education</h3>
-    <ul class="list-unstyled">
-      <li class="mb-3">
-        <h4 class="mb-1 font-weight-bold">Degree Name</h4>
-        <p class="mb-1">University Name, Location</p>
-        <p class="text-muted mb-0">Year of Graduation</p>
-      </li>
-      <!-- Add more education entries as needed -->
-    </ul>
-  </section>
-
-  <!-- Experience Section -->
-  <section class="mb-4">
-    <h3 class="font-weight-bold text-uppercase mb-3">Experience</h3>
-    <ul class="list-unstyled">
-      <li class="mb-3">
-        <h4 class="mb-1 font-weight-bold">Job Title</h4>
-        <p class="mb-1">Company Name, Location</p>
-        <p class="text-muted mb-1">Start Date - End Date</p>
-        <p class="mb-0">Description of responsibilities and achievements.</p>
-      </li>
-      <!-- Add more experience entries as needed -->
-    </ul>
-  </section>
-
-  <!-- Skills Section -->
-  <section class="mb-4">
-    <h3 class="font-weight-bold text-uppercase mb-3">Skills</h3>
-    <ul class="list-unstyled">
-      <li class="mb-1">Skill 1</li>
-      <li class="mb-1">Skill 2</li>
-      <li class="mb-1">Skill 3</li>
-      <!-- Add more skills as needed -->
-    </ul>
-  </section>
-
-  <!-- References Section -->
-  <section>
-    <h3 class="font-weight-bold text-uppercase mb-3">References</h3>
-    <p class="mb-0">Available upon request.</p>
-  </section>
+  {% assign resume_sections = site.data.resume %}
+  {% for section in resume_sections %}
+    <section class="mb-4">
+      <h3 class="section-name mb-3">{{ section.name }}</h3>
+      {% if section.items %}
+        <ul class="list-unstyled" style="font-size: 16px;">
+          {% for item in section.items %}
+            {% if section.name == 'Education' %}
+              <li class="mb-3">
+                <h4 class="mb-1 font-weight-bold">{{ item.degree }}</h4>
+                <p class="mb-1">{{ item.university }}</p>
+                <p class="text-muted mb-0">{{ item.graduation_year }}</p>
+              </li>
+            {% elsif section.name == 'Experience' %}
+              <li class="mb-3">
+                <div class="job-title-company">
+                  <h4 class="mb-1 font-weight-bold">{{ item.title }}</h4>
+                  <p class="mb-1">{{ item.company }}</p>
+                </div>
+                <p class="text-muted mb-1">{{ item.duration }}</p>
+                <p class="mb-0">{{ item.description }}</p>
+              </li>
+            {% elsif section.name == 'Skills' %}
+              <li class="mb-1">{{ item.name }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="mb-0" style="font-size: 16px;">{{ section.description }}</p>
+      {% endif %}
+    </section>
+  {% endfor %}
 </div>
