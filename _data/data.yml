@@ -4,31 +4,31 @@
 
 sidebar:
     position: right # position of the sidebar : left or right
-    about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-    education: True # set to False if you want education in main section instead of in sidebar
+    about: False # set to False or comment line if you want to remove the "how to use?" in the sidebar
+    education: False # set to False if you want education in main section instead of in sidebar
 
     # Profile information
     name: Ryan Sitorius
-    tagline: IT Manager
+    tagline: IT and Business Professional
     #avatar: profile.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
     # Sidebar links
     #email: hello@webjeda.com
     #phone: 012 345 6789
     timezone: America/Chicago Timezone
-    citizenship:
+    #citizenship:
     website: ryansitorius.com #do not add http://
-    linkedin: rsitorius
+    linkedin: ryan-sitorius
     #xing: alandoe
     github: rsitorius
-    telegram: # add your nickname without '@' sign
-    gitlab:
-    bitbucket:
-    #twitter: '@webjeda'
-    stack-overflow: # Number/Username, e.g. 123456/alandoe
-    codewars:
-    goodreads: # Number-Username, e.g. 123456-alandoe
-    pdf: #http://www.africau.edu/images/default/sample.pdf
+    #telegram: # add your nickname without '@' sign
+    #gitlab:
+    #bitbucket:
+    #twitter: 
+    #stack-overflow: # Number/Username, e.g. 123456/alandoe
+    #codewars:
+    #goodreads: # Number-Username, e.g. 123456-alandoe
+    #pdf: #http://www.africau.edu/images/default/sample.pdf
 
     languages:
       title: Languages
@@ -57,12 +57,61 @@ sidebar:
 career-profile:
     title: Career Profile
     summary: |
-      Summarise your career here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. You can [download this free resume/CV template here]().
-      Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-      penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-      Donec quam felis, ultricies nec, pellentesque eu.
-      Second paragraph if required.
+      Strategic IT Manager with 15+ years of experience driving successful 
+      initiatives through collaborative leadership. Proven ability to foster 
+      clear communication and build strong relationships, ensuring seamless 
+      collaboration across technical and non-technical teams. Passionate 
+      about IT-business alignment and fostering innovation to deliver 
+      successful outcomes.
+experiences:
+    title: Experiences
+    info:
+      - role: Technical Manager
+        time: 06.2015 - Present
+        company: FreightCar America | Chicago, IL
+        details: |
+          Describe your role here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
+          error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+          architecto beatae vitae dicta sunt explicabo.
+            - Bullet point
+            - Bullet point
+      - role: Programmer Analyst Supervisor
+        time: 01.2019 - 06.2021
+        company: FreightCar America | Chicago, IL
+        details: |
+          - Led a cross functional team of 14 developers and consultants 
+            across multiple projects, ensuring efficient resource allocation, 
+            on-time delivery, and successful project outcomes.
+          - Successfully spearheaded the multi-million dollar Oracle MX 
+            Organization implementation project as Project Manager. Led a 
+            cross functional team of over 40 members, facilitating key 
+            developments in currency exchange and regulatory reporting, 
+            enabling FreightCar's expansion into Mexico.
+          - Managed the implementation of Kronos Workforce Ready as Project 
+            Manager, a critical HCM solution for Mexico. Led a team of 12 to 
+            streamline employee labor tracking enhancing operational 
+            efficiency and cost control.
+          - Demonstrated strong technical expertise by administering a wide 
+            range of enterprise (including ERP, EPM, CRM, HCM, and BI) systems.
+
+      - role: UI Developer
+        time: 2012 - 2014
+        company: Amazon, London
+        details: |
+          Describe your role here lorem ipsum dolor sit amet, consectetuer
+          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+          Cum sociis natoque penatibus et magnis dis parturient montes,
+          nascetur ridiculus mus. Donec quam felis, ultricies nec,
+          pellentesque eu, pretium quis, sem.
+            - Bullet point
+            - Bullet point
+
 education:
     title: Education
     info:
@@ -86,47 +135,6 @@ education:
           sociis natoque penatibus et magnis dis parturient montes, nascetur
           ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
           pretium quis, sem.
-            - Bullet point
-            - Bullet point
-
-experiences:
-    title: Experiences
-    info:
-      - role: Lead Developer
-        time: 2015 - Present
-        company: Startup Hubs, San Francisco
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-          enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-          error sit voluptatem accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto beatae vitae dicta sunt explicabo.
-            - Bullet point
-            - Bullet point
-      - role: Senior Software Engineer
-        time: 2014 - 2015
-        company: Google, London
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
-            - Bullet point
-            - Bullet point
-      - role: UI Developer
-        time: 2012 - 2014
-        company: Amazon, London
-        details: |
-          Describe your role here lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus. Donec quam felis, ultricies nec,
-          pellentesque eu, pretium quis, sem.
             - Bullet point
             - Bullet point
 
