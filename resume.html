@@ -18,7 +18,7 @@ permalink: /resume/
     display: inline-block;
     font-weight: bold;
   }
-  .bar {
+  .bar::after {
     content: " |";
     margin-left: 5px;
     margin-right: 5px;
@@ -31,8 +31,6 @@ permalink: /resume/
 </style>
 
 <div class="container mt-4">
-  <h2 class="mb-4">Resume</h2>
-  
   {% assign resume_sections = site.data.resume.resume_sections %}
   {% for section in resume_sections %}
     <section class="mb-4">

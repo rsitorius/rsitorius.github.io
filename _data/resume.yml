@@ -1,33 +1,72 @@
 resume_sections:
   - name: Summary
-    description: Enter your summary or objective here.
+    description: Strategic IT Manager with 15+ years of experience driving successful initiatives through collaborative leadership. Proven ability to foster clear communication and build strong relationships, ensuring seamless collaboration across technical and non-technical teams. Passionate about IT-business alignment and fostering innovation to deliver successful outcomes.
   - name: Education
     items:
-      - degree: Degree Name
-        university: University Name
-        location: Location
-        graduation_year: Year of Graduation
+      - degree: Executive Doctor of Business Administration
+        university: University of North Alabama
+        location: Florence, AL
+        graduation_year: expected 12.2024
         description: Description of education.
-      # Add more education entries as needed
+      - degree: Masters of Business Administration
+        university: University of North Alabama
+        location: Florence, AL
+        graduation_year: 12.2021
+        description: Description of education.
+      - degree: Bachelor of Science in Interdisciplinary Studies
+        university: University of North Alabama
+        location: Florence, AL
+        graduation_year: 12.2019
+        description: Description of education.
   - name: Experience
     items:
-      - title: Job Title
-        company: Company Name
-        location: Location
-        start_date: Start Date
-        end_date: End Date
+      - title: Technical Manager
+        company: FreightCar America
+        location: Chicago, IL
+        start_date: 06.2021
+        end_date: Present
+        description: Description of responsibilities and achievements.
+      - title: Programmer Analyst Supervisor
+        company: FreightCar America
+        location: Chicago, IL
+        start_date: 01.2019
+        end_date: 06.2021
+        description: Description of responsibilities and achievements.
+      - title: Programmer Analyst
+        company: FreightCar America
+        location: Chicago, IL
+        start_date: 02.2016
+        end_date:  01.2019
+        description: Description of responsibilities and achievements.
+      - title: Technical Support Specialist
+        company: FreightCar America
+        location: Chicago, IL
+        start_date: 10.2013
+        end_date: 02.2016
+        description: Description of responsibilities and achievements.
+      - title: Independent Contractor
+        company: FreightCar America
+        location: Chicago, IL
+        start_date: 04.2013
+        end_date: 010.2013
+        description: Description of responsibilities and achievements.
+      - title: Computer System Administrator
+        company: Dixie Heat Treating
+        location: Florence, AL
+        start_date: 10.2006
+        end_date: 04.2013
         description: Description of responsibilities and achievements.
       # Add more experience entries as needed
   - name: Skills
     categories:
-      - name: Programming Languages
+      - name: Business Skills
         items:
-          - name: Python
-          - name: JavaScript
-          - name: Java
-      - name: Web Technologies
+          - name: IT Leadership and Strategy
+          - name: Change and Process Management
+          - name: IT Operations and Governance
+      - name: Technical Skills
         items:
-          - name: HTML5
-          - name: CSS3
-          - name: JavaScript Frameworks (React, Vue.js, Angular)
+          - name: Enterprise Systems Management
+          - name: Security Management
+          - name: Infrastructure Management
       # Add more skill categories as needed
