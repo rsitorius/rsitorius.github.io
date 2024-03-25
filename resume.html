@@ -7,6 +7,7 @@ permalink: /resume/
 <style>
   .section-header {
     margin-top: 10px;
+    font-size: 16px;
     font-weight: bold;
   }
   .section-header hr {
@@ -67,7 +68,7 @@ permalink: /resume/
         <ul class="list-unstyled" style="font-size: 16px;">
           {% for category in section.categories %}
             <li class="mb-3">
-              <h4 class="info mb-1">{{ category.name }}</h4>
+              <div class="info mb-1">{{ category.name }}</div>
               <ul class="list-unstyled">
                 {% for skill in category.items %}
                   <li>{{ skill.name }}</li>
