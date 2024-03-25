@@ -34,7 +34,7 @@ permalink: /resume/
   {% assign resume_sections = site.data.resume.resume_sections %}
   {% for section in resume_sections %}
     <section class="mb-4">
-      <div class="section-header">{{ section.name }}</div>
+      <div class="section-header">{{ section.name }}<hr /></div>
       {% if section.name == 'Experience' %}
         <ul class="list-unstyled" style="font-size: 16px;">
           {% for item in section.items %}
