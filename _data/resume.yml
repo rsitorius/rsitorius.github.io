@@ -18,36 +18,24 @@ resume_sections:
         start_date: 01.2019
         end_date: 06.2021
         achivements:
-          - Led cross functional teams of developers and consultants 
-            across multiple projects, ensuring efficient resource allocation, 
-            on-time delivery, and successful project outcomes.
-          - Successfully managed several key projects related to expansion 
-            into Mexico (including ERP and HCM systems) to meet all regulatory
-            and operational requirements.
-          - Demonstrated strong technical expertise by administering a wide 
-            range of enterprise (including ERP, EPM, CRM, HCM, and BI) systems.
+          - Led cross functional teams of developers and consultants across multiple projects, ensuring efficient resource allocation, on-time delivery, and successful project outcomes.
+          - Successfully managed several key projects related to expansion into Mexico (including ERP and HCM systems) to meet all regulatory and operational requirements.
+          - Demonstrated strong technical expertise by administering a wide  range of enterprise (including ERP, EPM, CRM, HCM, and BI) systems.
       - title: Programmer Analyst
         company: FreightCar America
         location: Chicago, IL
         start_date: 02.2016
         end_date:  01.2019
         achivements:
-          - Successfully lead Kronos Schedulder project which drove employee 
-            employee utilization and operational efficiency by allowing management
-            to analyze labor based on budget, planned, and actual hours.
-          - Primary technician for key operational Oracle EBS projects related to 
-            the operational expansion and efficiency. The projects enhanced the 
-            capacity and reduced the operational costs.
+          - Successfully lead Kronos Schedulder project which drove employee employee utilization and operational efficiency by allowing management to analyze labor based on budget, planned, and actual hours.
+          - Primary technician for key operational Oracle EBS projects related to the operational expansion and efficiency. The projects enhanced the capacity and reduced the operational costs.
       - title: Technical Support Specialist
         company: FreightCar America
         location: Chicago, IL
         start_date: 10.2013
         end_date: 02.2016
         achivements:
-          - Managed a phased implmentation of Kronos across multiple locations which 
-            successfully implemented, Timekeeper, Accruals, and Attendance modules
-            streamlining time tracking and automating the attendance process which
-            reduced manual tracking and increased efficiency.
+          - Managed a phased implmentation of Kronos across multiple locations which successfully implemented, Timekeeper, Accruals, and Attendance modules streamlining time tracking and automating the attendance process which reduced manual tracking and increased efficiency.
       - title: Independent Contractor
         company: FreightCar America
         location: Chicago, IL
@@ -64,22 +52,22 @@ resume_sections:
         university: University of North Alabama
         location: Florence, AL
         graduation_year: expected 12.2024
-        description: Description of education.
+#        description: Description of education.
       - degree: Masters of Business Administration
         university: University of North Alabama
         location: Florence, AL
         graduation_year: 12.2021
-        description: Description of education.
+#        description: Description of education.
       - degree: Bachelor of Science in Interdisciplinary Studies
         university: University of North Alabama
         location: Florence, AL
         graduation_year: 12.2019
-        description: Description of education.
+#        description: Description of education.
   - name: Skills
     categories:
       - name: Business Skills
         items:
-          - name: IT Leadership and Strategy
+          - name: IT Leadership
           - name: Change and Process Management
           - name: IT Operations and Governance
       - name: Technical Skills
