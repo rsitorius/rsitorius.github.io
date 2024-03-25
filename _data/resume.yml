@@ -15,7 +15,7 @@ resume_sections:
     items:
       - degree: Degree Name
         university: University Name
-        location: 
+        location: location
         graduation_year: Year of Graduation
         description: description of class
       # Add more education entries as needed

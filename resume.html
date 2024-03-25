@@ -9,6 +9,7 @@ permalink: /resume/
   /* Custom CSS for section headers */
   .section-header {
     margin-top: 10px; /* Adjust margin-top as needed */
+    font-weight: bold;
   }
   .section-header hr {
     border: none;
@@ -60,26 +61,24 @@ permalink: /resume/
                   <div class="info">{{ item.university }}</div>
                   <div class="info">{{ item.location }}</div>
                   <div class="info duration">{{ item.graduation_year }}</div>
+                  <p class="mb-0">{{ item.description }}</p>
                 </li>
             {% elsif section.name == 'Skills' %}
-              <li class="mb-1">{{ item.name }}</li>
+            <ul class="list-unstyled" style="font-size: 16px;">
+              {% for category in section.categories %}
+                <li class="mb-3">
+                  <h4 class="mb-1">{{ category.name }}</h4>
+                  <ul class="list-unstyled">
+                    {% for skill in category.items %}
+                      <li>{{ skill.name }}</li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% endfor %}
+            </ul>
             {% endif %}
           {% endfor %}
         </ul>
-      {% elsif section.name == 'Skills' %}
-      <ul class="list-unstyled" style="font-size: 16px;">
-        {% for category in section.categories %}
-          <li class="mb-3">
-            <h4 class="mb-1">{{ category.name }}</h4>
-            <ul class="list-unstyled">
-              {% for skill in category.items %}
-                <li>{{ skill.name }}</li>
-              {% endfor %}
-            </ul>
-          </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
     </section>
   {% endfor %}
 </div>
