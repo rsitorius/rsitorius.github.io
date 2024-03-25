@@ -1,27 +1,25 @@
-# _data/resume.yml
-
 resume_sections:
   - name: Summary
     description: Enter your summary or objective here.
-  - name: Experience
-    items:
-      - title: Job Title
-        company: Company Name
-        location: location
-        duration: Start Date - End Date
-        description: Description of responsibilities and achievements.
-      # Add more experience entries as needed
   - name: Education
     items:
       - degree: Degree Name
         university: University Name
-        location: location
+        location: Location
         graduation_year: Year of Graduation
-        description: description of class
+        description: Description of education.
       # Add more education entries as needed
-  - name: Skills
+  - name: Experience
     items:
-      categories:
+      - title: Job Title
+        company: Company Name
+        location: Location
+        start_date: Start Date
+        end_date: End Date
+        description: Description of responsibilities and achievements.
+      # Add more experience entries as needed
+  - name: Skills
+    categories:
       - name: Programming Languages
         items:
           - name: Python
@@ -32,4 +30,4 @@ resume_sections:
           - name: HTML5
           - name: CSS3
           - name: JavaScript Frameworks (React, Vue.js, Angular)
-      # Add more skills as needed
+      # Add more skill categories as needed
