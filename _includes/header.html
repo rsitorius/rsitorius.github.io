@@ -4,13 +4,6 @@
       <nav class="navbar navbar-expand-lg">
         {% include menu.html %}
       </nav>
-      <div class="social-links">
-        {% assign social_links = site.data.contact.social_links %}
-        <!-- Display social media links -->
-        {% for link in social_links %}
-          <a href="{{ link.url }}" target="_blank"><img src="{{ link.icon }}" alt="{{ link.name }}"></a>
-        {% endfor %}
-      </div>
     </div>
   </header>
   
