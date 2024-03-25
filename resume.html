@@ -38,110 +38,32 @@ permalink: /resume/
         <h3 class="mb-3">{{ section.name }}</h3>
         <hr>
       </div>
-      {% if section.items %}
+      {% if section.name == 'Experience' %}
         <ul class="list-unstyled" style="font-size: 16px;">
           {% for item in section.items %}
-            {% if section.name == 'Experience' %}
-              <li class="mb-3">
-                <div class="info bar">{{ item.title }}</div>
-                <div class="info bar">{{ item.company }}</div>
-                <div class="info bar">{{ item.location }}</div>
-                <div class="info duration">{{ item.start_date }} - {{ item.end_date }}</div>
----
-layout: default
-title: Resume
-permalink: /resume/
----
-
-<style>
-  .section-header {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  .section-header hr {
-    border: none;
-    border-top: 2px solid black;
-    margin-top: 5px;
-  }
-  .info {
-    display: inline-block;
-    font-weight: bold;
-  }
-  .bar::after {
-    content: " |";
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  .duration {
-    font-style: italic;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-</style>
-
-<div class="container mt-4">
-  {% assign resume_sections = site.data.resume.resume_sections %}
-  {% for section in resume_sections %}
-    <section class="mb-4">
-      <div class="section-header">
-        <h3 class="mb-3">{{ section.name }}</h3>
-        <hr>
-      </div>
-      {% if section.items %}
-        <ul class="list-unstyled" style="font-size: 16px;">
-          {% for item in section.items %}
-            {% if section.name == 'Experience' %}
-              <li class="mb-3">
-                <div class="info bar">{{ item.title }}</div>
-                <div class="info bar">{{ item.company }}</div>
-                <div class="info bar">{{ item.location }}</div>
-                <div class="info duration">{{ item.start_date }} - {{ item.end_date }}</div>
-                <ul>
-                  {% for achievement in item.achievements %}
-                    <li>{{ achievement }}</li>
-                  {% endfor %}
-                </ul>
-              </li>
-            {% elsif section.name == 'Education' %}
-              <li class="mb-3">
-                <div class="info bar">{{ item.degree }}</div>
-                <div class="info bar">{{ item.university }}</div>
-                <div class="info bar">{{ item.location }}</div>
-                <div class="info duration">{{ item.graduation_year }}</div>
-                <p class="mb-0">{{ item.description }}</p>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% elsif section.name == 'Skills' %}
-        <ul class="list-unstyled" style="font-size: 16px;">
-          {% for category in section.categories %}
             <li class="mb-3">
-              <h4 class="mb-1">{{ category.name }}</h4>
-              <ul class="list-unstyled">
-                {% for skill in category.items %}
-                  <li>{{ skill.name }}</li>
+              <div class="info bar">{{ item.title }}</div>
+              <div class="info bar">{{ item.company }}</div>
+              <div class="info bar">{{ item.location }}</div>
+              <div class="info duration">{{ item.start_date }} - {{ item.end_date }}</div>
+              <ul>
+                {% for achievement in item.achievements %}
+                  <li>{{ achievement }}</li>
                 {% endfor %}
               </ul>
             </li>
           {% endfor %}
         </ul>
-      {% else %}
-        <p class="mb-0" style="font-size: 16px;">{{ section.description }}</p>
-      {% endif %}
-    </section>
-  {% endfor %}
-</div>
-              </li>
-            {% elsif section.name == 'Education' %}
-              <li class="mb-3">
-                <div class="info bar">{{ item.degree }}</div>
-                <div class="info bar">{{ item.university }}</div>
-                <div class="info bar">{{ item.location }}</div>
-                <div class="info duration">{{ item.graduation_year }}</div>
-                <p class="mb-0">{{ item.description }}</p>
-              </li>
-            {% endif %}
+      {% elsif section.name == 'Education' %}
+        <ul class="list-unstyled" style="font-size: 16px;">
+          {% for item in section.items %}
+            <li class="mb-3">
+              <div class="info bar">{{ item.degree }}</div>
+              <div class="info bar">{{ item.university }}</div>
+              <div class="info bar">{{ item.location }}</div>
+              <div class="info duration">{{ item.graduation_year }}</div>
+              <p class="mb-0">{{ item.description }}</p>
+            </li>
           {% endfor %}
         </ul>
       {% elsif section.name == 'Skills' %}
