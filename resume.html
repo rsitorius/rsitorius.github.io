@@ -18,7 +18,7 @@ permalink: /resume/
     display: inline-block;
     font-weight: bold;
   }
-  .info::after {
+  .bar {
     content: " |";
     margin-left: 5px;
     margin-right: 5px;
@@ -45,17 +45,17 @@ permalink: /resume/
           {% for item in section.items %}
             {% if section.name == 'Experience' %}
               <li class="mb-3">
-                <div class="info">{{ item.title }}</div>
-                <div class="info">{{ item.company }}</div>
-                <div class="info">{{ item.location }}</div>
+                <div class="info bar">{{ item.title }}</div>
+                <div class="info bar">{{ item.company }}</div>
+                <div class="info bar">{{ item.location }}</div>
                 <div class="info duration">{{ item.start_date }} - {{ item.end_date }}</div>
                 <p class="mb-0">{{ item.description }}</p>
               </li>
             {% elsif section.name == 'Education' %}
               <li class="mb-3">
-                <div class="info">{{ item.degree }}</div>
-                <div class="info">{{ item.university }}</div>
-                <div class="info">{{ item.location }}</div>
+                <div class="info bar">{{ item.degree }}</div>
+                <div class="info bar">{{ item.university }}</div>
+                <div class="info bar">{{ item.location }}</div>
                 <div class="info duration">{{ item.graduation_year }}</div>
                 <p class="mb-0">{{ item.description }}</p>
               </li>
